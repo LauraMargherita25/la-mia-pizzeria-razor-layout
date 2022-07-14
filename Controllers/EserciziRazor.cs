@@ -51,7 +51,11 @@ namespace la_mia_pizzeria_static.Controllers
 
             DateTime today = DateTime.Now;
             ViewData["Today"] = today;
+            ViewData["OneWickAgo"] = today.AddDays(-7);
+            ViewData["Day"] = today.DayOfWeek;
+            ViewData["DayOneYear"] = today.AddYears(+1).DayOfWeek;
             return View();
+
         }
 
     }
