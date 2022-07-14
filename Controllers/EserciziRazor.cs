@@ -21,6 +21,22 @@ namespace la_mia_pizzeria_static.Controllers
             }
 
             ViewData["SumResult"] = Sum(10);
+
+            int SumA()
+            {
+                //string str = "Techie Delight";
+                //char ch = 'e';
+                //int freq = str.Count(f => (f == ch));
+                //Console.WriteLine(freq);
+
+                string text = "nel mezzo del cammin di nostra vita";
+                char character = 'a';
+                int freq = text.Count(f => (f == character));
+
+                return freq;
+            }
+
+            ViewData["HowManyA"] = SumA();
             return View();
         }
 
@@ -36,17 +52,17 @@ namespace la_mia_pizzeria_static.Controllers
 //Stampare dentro uno span il risultato.
 
 
-
-
-
-
-
-
-
-
-
-
 //3. Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina
+
+
+
+
+
+
+
+
+
+
 //4. Creare una List<int> di 20 numeri interi (generati random da 1 a 90, 1 e 90 inclusi) e mostrare in pagina solo i numeri compresi tra 20 e 70
 //5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi
 //6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
