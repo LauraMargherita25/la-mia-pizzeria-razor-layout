@@ -46,11 +46,11 @@ namespace la_mia_pizzeria_static.Controllers
                     validNums.Add(num);
                 }
             }  
-            
-
             string combinedString = string.Join(",", validNums.ToArray());
             ViewData["RndNum"] = combinedString;
 
+            DateTime today = DateTime.Now;
+            ViewData["Today"] = today;
             return View();
         }
 
@@ -72,13 +72,13 @@ namespace la_mia_pizzeria_static.Controllers
 //4. Creare una List<int> di 20 numeri interi (generati random da 1 a 90, 1 e 90 inclusi) e mostrare in pagina solo i numeri compresi tra 20 e 70
 
 
-
-
-
-
-
-
 //5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi
+
+
+
+
+
+
 //6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
 //a.la data di 7 giorni fa
 //b.che giorno della settimana è oggi (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)
